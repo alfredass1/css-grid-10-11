@@ -1,0 +1,36 @@
+
+.container{
+	text-align: center;
+    display: grid;
+	grid-template-columns: repeat (4,1fr)
+	grid-template-rows:auto;
+	grid-template-areas:
+	  "header header header header"
+	  "main main . sidebar"
+	  "footer footer footer footer";
+	grid=column-gap:10px;
+	grid-row-gap:15px;
+	background-color: #2196F3;
+	padding: 10px;
+
+}
+
+
+.container div{
+	background-color: #eee;
+}
+
+.item-a{
+	grid-area: header;
+}
+
+.item-b{
+	grid-area: main;
+}
+
+.item-c{
+	grid-area: sidebar;
+}
+.item-d{
+	grid-area: footer;
+}
